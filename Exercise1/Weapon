@@ -1,0 +1,37 @@
+public class Weapon {
+    
+    int damage;
+    int weight;
+    String rarity;
+    String description;
+    String name;
+
+    Weapon(int damage, int weight, String rarity, String description, String name ){
+        this.name = name;
+        this.damage = damage; 
+        this.weight = weight;
+        this.rarity = rarity;
+        this.description = description;
+        
+    }
+    public void ShowName(){
+        System.out.println("Name: " + name);
+    }
+
+    public void ShowDamage(){
+        System.out.println("Damage: " + damage);
+    }
+
+    public void ShowWeight(){
+        System.out.println("Weight: " + weight + " kg");
+    }
+
+    public void ShowRarity(){
+        System.out.println("Rarity: " + rarity);
+    }
+
+    public void ShowDescription(){
+        System.out.println("Weapon Description: " + description);
+    }
+    
+}
