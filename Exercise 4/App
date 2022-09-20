@@ -1,0 +1,48 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class App {
+
+    public static void main(String[] args) {
+        Queue<String> StudentName = new LinkedList<>();
+
+        // Adds elements to the queue
+        StudentName.add("Bantegui, Moses Christian");
+        StudentName.add("Aranilla Lawrence");
+        StudentName.add("Jeremiah paragiran");
+        StudentName.add("Ivan Guansing");
+        StudentName.add("Jethro Ruiz D. Vargas");
+        
+        System.out.println(StudentName);
+        
+
+        
+           // Get the size of the queue
+           System.out.println(StudentName.size());
+
+            // Get the front of the queue
+           System.out.println(StudentName.peek());
+        
+
+        // Dequeue 5 of your classmates
+        StudentName.remove();
+        StudentName.remove();
+        StudentName.remove();
+        StudentName.remove();
+        StudentName.remove();
+
+        //Enqueue another 5 of you classmates
+        StudentName.add("Legaspi, Carlos Leslie");
+        StudentName.add("Jean Angelo Flores");
+        StudentName.add("Du, Alexander John");
+        StudentName.add("Jethro Ruiz D. Vargas");
+        StudentName.add("Valencia, Jamil");
+   
+        // Get the size of the queue
+        System.out.println(StudentName.size());
+
+        // Get the front of the queue
+        System.out.println(StudentName.peek());
+
+    }
+}
